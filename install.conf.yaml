@@ -1,3 +1,26 @@
-- clean: []
-- link: {}
-- shell: []
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.config/fuzzel/fuzzel.ini:
+    ~/.zshrc:
+      force: true
+    ~/.config/hypr/:
+      path: ".config/hypr/*"
+      create: true
+      glob: true
+      force: true
+    ~/.config/waybar/:
+      create: true
+      glob: true
+      path: ".config/waybar/**"
+      relink: true
+- create:
+    - ~/wallpapers
+    - ~/git
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
