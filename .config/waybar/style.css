@@ -21,7 +21,7 @@ tooltip {
 
 #workspaces button {
     padding: 5px;
-    color: #96d63e;
+    color: #0E9FB4;
     margin-right: 5px;
 }
 
@@ -60,7 +60,7 @@ tooltip {
 #tray,
 #memory,
 #backlight {
-    background: rgba(34, 204, 173, 0.377);
+    background: rgba(35, 37, 40, 0.603);
     padding: 0px 10px;
     margin: 3px 0px;
     margin-top: 10px;
@@ -146,7 +146,7 @@ tooltip {
 }
 
 #battery {
-    color: #4ad63e;
+    color: #0E9FB4;
     margin-right: 5px;
     border-left: 0px;
     border-radius: 0 10px 10px 0;
@@ -156,7 +156,7 @@ tooltip {
 }
 
 #custom-weather {
-    color: #3e96d6;
+    color: #D6C93E;
     border-radius: 0px 10px 10px 0px;
     border-right: 0px;
     margin-left: 0px;

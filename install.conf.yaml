@@ -31,9 +31,10 @@
     ~/wallpapers/:
       glob: true
       path: "wallpapers/**"
-    
+
 - create:
     - ~/git
-
+    - ~/.themes
+    - ~/.icons
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
