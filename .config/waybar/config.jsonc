@@ -7,23 +7,21 @@
     "gtk-layer-shell": true,
     "height": 0,
     "modules-left": [
-        "clock",
-        "custom/weather",
-        "hyprland/workspaces"
+	"network",
+	"memory",
     ],
-    "modules-center": ["hyprland/window"],
+    "modules-center": [
+	"clock",
+        "custom/weather",
+    ],
     "modules-right": [
-        "tray",
-        "custom/updates",
-        "custom/language",
-        "battery",
         "backlight",
-        "wireplumber"
-        //"pulseaudio#microphone"
+	"pulseaudio",
     ],
 
     "hyprland/window": {
-        "format": "{}"
+        "format": "{}",
+	"max-length": 20,
     },
     "hyprland/workspaces": {
         "disable-scroll": true,
@@ -46,9 +44,8 @@
     "custom/updates": {
         "format": " {}",
         "interval": 7200,                     // every two hours
-        "exec": "i=$(checkupdates); echo \"$i\" |wc -l; echo \"$i\" |column -t |tr '\n' '\r'",       // # of updates and tooltip details
         "exec-if": "exit 0",                  // always run; consider advanced run conditions
-        "on-click": "kitty -e sudo pacman -Syu", // update system
+        "on-click": "kitty -e sudo dnf update --refresh", // update system
         "signal": 8
     },
    "custom/weather" : {
@@ -63,15 +60,15 @@
         "spacing": 10
     },
     "clock": {
-        "format": "{: %R   %d/%m}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%Y-%m-%d}"
     },
     "backlight": {
         "device": "apple-panel-bl",
         "format": "{icon} {percent}%",
-        "format-icons": ["☼", "☼"],
-        "on-scroll-up": "brightnessctl set 1%+",
-        "on-scroll-down": "brightnessctl set 1%-",
+        "format-icons": ["☼","☀"],
+        "on-scroll-up": "brightnessctl set 5%+",
+        "on-scroll-down": "brightnessctl set 5%-",
         "min-length": 6
     },
     "battery": {
@@ -104,14 +101,20 @@
             "default": ["", "", ""]
         }
     },
+    "memory": {
+	"interval": 30,
+	"format": "{}% ",
+	"max-length": 10
+	},
     "wireplumber": {
-	    "format": "{icon} {volume}%",
+	"format": "{icon} {volume}%",
         "tooltip": false,
-	    "format-muted": " Muted",
-	    "on-click": "helvum",
+	"format-muted": " Muted",
+	"on-click": "helvum",
         "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+",
         "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-",
         "scroll-step": 5,
+	"max-volume": 100,
         "format-icons": {
             "headphone": "",
             "hands-free": "",

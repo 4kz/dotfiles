@@ -17,7 +17,14 @@
       create: true
       glob: true
       path: ".config/waybar/**"
-      relink: true
+    ~/.config/kitty/:
+      create: true
+      glob: true
+      path: ".config/kitty/**"
+    ~/.config/dunst/:
+      create: true
+      glob: true
+      path: ".config/dunst/**"
 - create:
     - ~/wallpapers
     - ~/git
