@@ -26,9 +26,11 @@
     ~/.config/dunst/:
       glob: true
       path: ".config/dunst/**"
-
+    ~/wallpapers/:
+      glob: true
+      path: "wallpapers/**"
+    
 - create:
-    - ~/wallpapers
     - ~/git
 
 - shell:
