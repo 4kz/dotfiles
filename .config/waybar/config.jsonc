@@ -7,27 +7,30 @@
     "gtk-layer-shell": true,
     "height": 0,
     "modules-left": [
-	"network",
-	"memory",
-    ],
-    "modules-center": [
-	"clock",
+        "clock",
         "custom/weather",
+        "hyprland/workspaces"
     ],
+    "modules-center": ["hyprland/window"],
     "modules-right": [
+        "tray",
+        "custom/updates",
+        "custom/language",
+        "memory",
         "backlight",
-	"pulseaudio",
+        "pulseaudio",
+        "battery"
     ],
 
     "hyprland/window": {
         "format": "{}",
-	"max-length": 20,
-    },
+        "max-length": 38
+        },
     "hyprland/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
         "on-click": "activate",
-        //"format": "{icon}",
+        "format": "{icon}",
         "persistent_workspaces": {
             "1": [],
             "2": [],
@@ -102,19 +105,19 @@
         }
     },
     "memory": {
-	"interval": 30,
-	"format": "{}% ",
-	"max-length": 10
+	    "interval": 30,
+	    "format": "{}% ",
+	    "max-length": 10
 	},
     "wireplumber": {
-	"format": "{icon} {volume}%",
+	    "format": "{icon} {volume}%",
         "tooltip": false,
-	"format-muted": " Muted",
-	"on-click": "helvum",
+	    "format-muted": " Muted",
+	    "on-click": "helvum",
         "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+",
         "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-",
         "scroll-step": 5,
-	"max-volume": 100,
+	    "max-volume": 100,
         "format-icons": {
             "headphone": "",
             "hands-free": "",
