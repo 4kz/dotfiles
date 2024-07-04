@@ -6,6 +6,8 @@
 - clean: ['~']
 
 - link:
+    ~/.local/bin/hypershot:
+      path: ".local/bin/hypershot"
     ~/.local/bin/wrappedhl:
       path: ".local/bin/wrappedhl"
     ~/.config/fuzzel/fuzzel.ini:
