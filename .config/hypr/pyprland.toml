@@ -1,6 +1,6 @@
 [pyprland]
 plugins = [
 #    "gbar",
-    "expose",
+#    "expose",
     "workspaces_follow_focus"
 ]
