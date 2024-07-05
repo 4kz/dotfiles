@@ -42,6 +42,7 @@ tooltip {
     background: rgba(214, 62, 151, 0.459);
     background: rgba(151, 214, 62, 0.24);
     color: rgb(242, 123, 230);
+    background: #0E9FB4;
     color: #cfdbe4;
 
 }
@@ -163,6 +164,9 @@ tooltip {
 #battery {
     color: #0eb577;
     color: #0E9FB4;
+    color: rgb(214, 62, 151);
+    color: rgb(242, 123, 230);
+    color: rgb(14, 158, 180);
     margin-right: 5px;
     border-left: 0px;
     border-radius: 0 10px 10px 0;
