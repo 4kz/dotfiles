@@ -1,58 +1,31 @@
-Dotfiles Template
-=================
-
-This is a template repository for bootstrapping your dotfiles with [Dotbot][dotbot].
-
-To get started, you can [create a new repository from this template][template]
-(or you can [fork][fork] this repository, if you prefer). You can probably
-delete this README and rename your version to something like just `dotfiles`.
-
-In general, you should be using symbolic links for everything, and using git
-submodules whenever possible.
-
-To keep submodules at their proper versions, you could include something like
-`git submodule update --init --recursive` in your `install.conf.yaml`.
-
-To upgrade your submodules to their latest versions, you could periodically run
-`git submodule update --init --remote`.
-
-Inspiration
------------
-
-If you're looking for inspiration for how to structure your dotfiles or what
-kinds of things you can include, you could take a look at some repos using
-Dotbot.
-
-* [anishathalye's dotfiles][anishathalye_dotfiles]
-* [csivanich's dotfiles][csivanich_dotfiles]
-* [m45t3r's dotfiles][m45t3r_dotfiles]
-* [alexwh's dotfiles][alexwh_dotfiles]
-* [azd325's dotfiles][azd325_dotfiles]
-* [wazery's dotfiles][wazery_dotfiles]
-* [thirtythreeforty's dotfiles][thirtythreeforty_dotfiles]
-
-And there are about [700 more here][dotbot-users].
-
-If you're using Dotbot and you'd like to include a link to your dotfiles here
-as an inspiration to others, please submit a pull request.
-
-License
--------
-
-This software is hereby released into the public domain. That means you can do
-whatever you want with it without restriction. See `LICENSE.md` for details.
-
-That being said, I would appreciate it if you could maintain a link back to
-Dotbot (or this repository) to help other people discover Dotbot.
-
-[dotbot]: https://github.com/anishathalye/dotbot
-[fork]: https://github.com/anishathalye/dotfiles_template/fork
-[template]: https://github.com/anishathalye/dotfiles_template/generate
-[anishathalye_dotfiles]: https://github.com/anishathalye/dotfiles
-[csivanich_dotfiles]: https://github.com/csivanich/dotfiles
-[m45t3r_dotfiles]: https://github.com/m45t3r/dotfiles
-[alexwh_dotfiles]: https://github.com/alexwh/dotfiles
-[azd325_dotfiles]: https://github.com/Azd325/dotfiles
-[wazery_dotfiles]: https://github.com/wazery/dotfiles
-[thirtythreeforty_dotfiles]: https://github.com/thirtythreeforty/dotfiles
-[dotbot-users]: https://github.com/anishathalye/dotbot/wiki/Users
+NetworkManager-bluetooth-1:1.46.0-2.fc40.aarch64
+NetworkManager-tui-1:1.46.0-2.fc40.aarch64
+NetworkManager-wifi-1:1.46.0-2.fc40.aarch64
+brightnessctl-0:0.5.1-11.fc40.aarch64
+clipman-0:1.6.2-5.fc40.aarch64
+dmenu-0:5.2-5.fc40.aarch64
+dnf-0:4.19.2-1.fc40.noarch
+dolphin-0:24.05.0-1.fc40.aarch64
+flatpak-0:1.15.8-1.fc40.aarch64
+flatseal-0:2.1.2-1.fc40.noarch
+fuzzel-0:1.10.2-1.fc40.aarch64
+gwenview-1:24.05.0-1.fc40.aarch64
+hyprcursor-devel-0:0.1.9-2.fc40.aarch64
+hypridle-0:0.1.2-1.fc40.aarch64
+hyprland-0:0.41.2-1.fc40.aarch64
+hyprland-devel-0:0.41.2-1.fc40.aarch64
+hyprlock-0:0.3.0-1.fc40.aarch64
+hyprnome-0:0.2.0-1.fc40.aarch64
+hyprpaper-0:0.6.0-1.fc40.aarch64
+hyprpicker-0:0.3.0-1.fc40.aarch64
+kf5-kservice-0:5.116.0-1.fc40.aarch64
+mpv-0:0.37.0-4.fc40.aarch64
+network-manager-applet-0:1.36.0-2.fc40.aarch64
+sqlite-0:3.45.1-2.fc40.aarch64
+waybar-0:0.10.3-1.fc40.aarch64
+wayland-protocols-devel-0:1.36-1.fc40.noarch
+wev-0:1.0.1-0.20230427git0fc0549.fc40.aarch64
+wireplumber-devel-0:0.5.5-1.fc40.aarch64
+wlroots-devel-0:0.17.3-1.fc40.aarch64
+wlroots0.16-0:0.16.2-2.fc40.aarch64
+zsh-0:5.9-14.fc40.aarch64

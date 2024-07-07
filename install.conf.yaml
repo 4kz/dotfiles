@@ -31,10 +31,17 @@
     ~/wallpapers/:
       glob: true
       path: "wallpapers/**"
+    ~/.config/networkmanager-dmenu/config.ini:
+      path: ".config/networkmanager-dmenu/config.ini"
+    ~/.local/bin/:
+      glob: true
+      path: ".local/bin/**"
 
 - create:
     - ~/git
     - ~/.themes
     - ~/.icons
+    - ~/.local/bin/
+
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
