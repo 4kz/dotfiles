@@ -75,13 +75,22 @@ tooltip {
 #workspaces,
 #tray,
 #memory,
+#bluetooth,
 #backlight {
     background: rgba(35, 37, 40, 0.603);
+    background: rgba(29, 27, 31, 0.8);
     padding: 0px 10px;
     margin: 3px 0px;
     margin-top: 10px;
     border: 1px solid rgba(24, 24, 37, 0.171);
     color: #cfdbe4;
+}
+
+#bluetooth
+{
+    border-radius: 0px 10px 10px 0px;
+    margin-right: 5px;
+    border-left: 0px;
 }
 
 #backlight
@@ -143,8 +152,11 @@ tooltip {
 
 #network {
     color: #f9e2af;
+    /*margin-left: 5px;
+    border-right: 0px;*/
     border-left: 0px;
     border-right: 0px;
+    /*border-radius: 10px 0px 0px 10px;*/
 }
 
 #pulseaudio {
